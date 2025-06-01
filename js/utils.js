@@ -1,15 +1,13 @@
 function open_url() {
   var url = prompt("URL :");
-
   const prefix = "redirect/redirect.html?url=";
 
   if (url.startsWith(prefix))
-    {
-    let rawUrl = url.substring(prefix.length);
+  {
+    let raw_url = url.substring(prefix.length);
+    const encoded_url = encodeURIComponent(decodeURIComponent(raw_url));
 
-    const encodedUrl = encodeURIComponent(decodeURIComponent(rawUrl));
-
-    window.location.href = `${prefix}${encodedUrl}`;
+    window.location.href = `${prefix}${encoded_url}`;
   }
   else
   {
