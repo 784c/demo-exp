@@ -1,16 +1,11 @@
-body, html
+html, body
 {
-    height: 100%;
     margin: 0;
+    height: 100vh;
     background-color: black;
-}
-
-body
-{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .box
@@ -19,5 +14,9 @@ body
     height: 500px;
     padding: 10px;
     border: 5px solid rgb(44, 39, 39);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-sizing: border-box;
 }
