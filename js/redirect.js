@@ -16,5 +16,3 @@ back_button.addEventListener("click", (event) =>
 {
 	back();
 });
-
-redirect();
