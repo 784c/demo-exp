@@ -1,0 +1,22 @@
+html, body
+{
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box
+{
+    width: 320px;
+    height: 500px;
+    padding: 10px;
+    border: 5px solid rgb(44, 39, 39);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-sizing: border-box;
+}
